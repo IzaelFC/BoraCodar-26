@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class='flex flex-col'>
+        <div class='flex h-[50vh] gap-5 bg-[#FFEDE1] items-center justify-center'>
+          <img class='sm:w-[30%] w-[50%]' src='./pamonha.png' alt='' />
+          <div class='sm:ml-14 ml-5'>
+            <h1 class='text-[#58190A] sm:text-4xl text-xl font-bold'>Pamonha</h1>
+            <p class='sm:text-2xl text-base text-[#58190A]'>Prato típico com milho verde ralado</p>
+            <p class='flex sm:gap-3 gap-1 sm:text-base text-xs text-[#9B6647]'>
+              Porções
+              <button class='flex text-center my-auto items-center justify-center rounded-full text-[#9B6647] border border-[#9B6647]' onclick="decrease()"><i class="text-[16px] my-auto w-4 h-4 ph ph-minus"></i></button>
+              <span class='quantidade'>01</span>
+              <button class='flex text-center my-auto items-center justify-center rounded-full text-[#9B6647] border border-[#9B6647]' onclick="add()"><i class="text-[16px] my-auto w-4 h-4 ph ph-plus"></i></button>
+            </p>
+          </div>
+        </div>
+  
+        <div class='flex gap-5 sm:flex-row flex-col sm:h-[50vh] h-[50vh] w-screen sm:items-center sm:justify-between sm:px-20 bg-[#9b6647]'>
+          <section class='text-white sm:ml-0 ml-5 my-auto'>
+            <h1 class='flex gap-2 font-bold text-xl'><i class="text-base w-5 h-5 my-auto ph ph-basket"></i>Ingredientes</h1>
+            <p class="sm:text-base text-xs"><span class='quantidade'>1</span> <span class='plural'>espiga</span> de milho verde</p>
+            <p class="sm:text-base text-xs"><span class='quantidade'>1</span> <span class='plural'>colher</span> de sopa de açúcar</p>
+            <p class="sm:text-base text-xs"><span class='quantidade'>1</span> <span class='plural'>colher</span> de sopa de manteiga</p>
+            <p class="sm:text-base text-xs">Sal a gosto</p>
+            <p class="sm:text-base text-xs">Palha de milho (para embrulhar)</p>
+          </section>
+  
+          <section class='text-white sm:ml-0 ml-5 my-auto'>
+            <h1 class='flex gap-2 font-bold text-xl'><i class="text-base my-auto w-5 h-5 ph ph-cooking-pot"></i>Modo de preparo</h1>
+            <ul>
+              <li class="sm:text-base text-xs">Descasque a espiga de milho e corte os grãos.</li>
+              <li class="sm:text-base text-xs">Bata o milho, açúcar, manteiga e sal no liquidificador.</li>
+              <li class="sm:text-base text-xs">Coloque a massa nas palhas de milho e feche bem.</li>
+              <li class="sm:text-base text-xs">Cozinhe em água fervente por cerca de 40 minutos.</li>
+              <li class="sm:text-base text-xs">Deixe esfriar e sirva.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+</body>
+</html>
